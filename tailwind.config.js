@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{tsx,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: '#ff0000',
+      },
+    },
   },
   plugins: [],
+  mode: 'jit',
 };
