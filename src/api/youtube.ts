@@ -37,33 +37,3 @@ export const Youtube = (function () {
     },
   };
 })();
-
-// export async function searchVideo(keyword: string | undefined) {
-//   return keyword ? searchByKeyword(keyword) : mostPopular();
-// }
-
-// async function searchByKeyword(keyword: string | undefined) {
-//   const { data } = await customAxios.get('search', {
-//     params: {
-//       part: 'snippet',
-//       maxResults: 25,
-//       type: 'video',
-//       q: keyword,
-//     },
-//   });
-
-//   console.log(data);
-
-//   // const items = data.items.map((item: any) =>
-//   //   item.id ? item : { ...item, id: item.id.videoId }
-//   // );
-
-//   // return items;
-//   return data;
-// }
-
-// async function mostPopular(): Promise<Video[]> {
-//   const { data } = await axios.get(`videos/popular.json`);
-
-//   return data.items;
-// }
