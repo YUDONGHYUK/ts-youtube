@@ -29,6 +29,7 @@ export const Youtube = (function () {
         params: {
           part: 'snippet',
           chart: 'mostPopular',
+          regionCode: 'kr',
           maxResults: 25,
         },
       });
