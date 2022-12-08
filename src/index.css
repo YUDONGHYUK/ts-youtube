@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   @apply flex flex-col items-center;
-  @apply w-full h-screen;
+  @apply w-full h-screen px-8;
   @apply bg-zinc-900 text-gray-100;
 }
 

@@ -35,5 +35,34 @@ export const Youtube = (function () {
 
       return data.items;
     },
+    channelDetail: async function (keyword: string) {
+      const { data } = await customAxios('channels', {
+        params: {
+          part: 'snippet',
+          type: 'video',
+          maxResults: 25,
+          q: keyword,
+        },
+      });
+
+      return data.items[0];
+    },
+    relatedVideos: async function (keyword: string) {
+      const { data } = await customAxios('search', {
+        params: {
+          part: 'snippet',
+          type: 'video',
+          maxResults: 25,
+          relatedToVideoId: keyword,
+        },
+      });
+      console.log(data);
+      const items = data.items.map((item: any) => ({
+        ...item,
+        id: item.id.videoId,
+      }));
+
+      return items;
+    },
   };
 })();
