@@ -12,17 +12,17 @@ export function timeAgo(value: string) {
   const betweenTimeMinute = Math.floor(betweenTime / 60);
   if (betweenTimeMinute < 60) return `${betweenTimeMinute}분 전`;
 
-  const betweenTimeHour = Math.floor(betweenTime / 60 / 60);
+  const betweenTimeHour = Math.floor(betweenTimeMinute / 60);
   if (betweenTimeHour < 24) return `${betweenTimeHour}시간 전`;
 
-  const betweenTimeDay = Math.floor(betweenTime / 60 / 60 / 24);
+  const betweenTimeDay = Math.floor(betweenTimeHour / 24);
   if (betweenTimeDay < 7) return `${betweenTimeDay}일 전`;
 
-  const betweenTimeWeek = Math.floor(betweenTime / 60 / 60 / 24 / 7);
-  if (betweenTimeWeek < 4) return `${betweenTimeWeek}주 전`;
+  const betweenTimeWeek = Math.floor(betweenTimeDay / 7);
+  if (betweenTimeWeek < 5) return `${betweenTimeWeek}주 전`;
 
-  const betweenTimeMonth = Math.floor(betweenTime / 60 / 60 / 24 / 7 / 4);
+  const betweenTimeMonth = Math.floor(betweenTimeDay / 30);
   if (betweenTimeMonth < 12) return `${betweenTimeMonth}개월 전`;
 
-  return `${Math.floor(betweenTimeMonth / 12)}년 전`;
+  return `${Math.floor(betweenTimeDay / 365)}년 전`;
 }
