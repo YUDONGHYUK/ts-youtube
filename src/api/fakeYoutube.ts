@@ -3,7 +3,16 @@ import axios from 'axios';
 export type Video = {
   id: string;
   snippet: {
+    publishedAt: string;
     title: string;
+    thumbnails: {
+      medium: {
+        url: string;
+        width: string;
+        height: string;
+      };
+    };
+    channelTitle: string;
   };
 };
 

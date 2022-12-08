@@ -2442,6 +2442,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/line-clamp@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "@tailwindcss/line-clamp@npm:0.4.2"
+  peerDependencies:
+    tailwindcss: ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
+  checksum: 26b8135df24fff51c3d3790ae795bdc12bc4a7113fa22dcab80568ae6ee00710e2ed4154048958c472bb654061f0f1573b7ac5e004ae6222cbd5ac6fcf199478
+  languageName: node
+  linkType: hard
+
 "@tanstack/query-core@npm:4.19.1":
   version: 4.19.1
   resolution: "@tanstack/query-core@npm:4.19.1"
@@ -13087,6 +13096,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "youtube@workspace:."
   dependencies:
+    "@tailwindcss/line-clamp": ^0.4.2
     "@tanstack/react-query": ^4.19.1
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
