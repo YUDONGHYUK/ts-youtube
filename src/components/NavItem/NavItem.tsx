@@ -11,13 +11,13 @@ export default function NavItem({ item, onUpdate }: NavItemProps) {
 
   return (
     <li
-      className={`flex items-center h-12 mb-1 px-3 rounded-xl ${
+      className={`flex flex-col justify-center items-center rounded-xl py-2 lg:h-12 lg:mb-1 lg:px-3 lg:flex-row ${
         isActive ? 'bg-zinc-800' : ''
       } hover:bg-zinc-800`}
       onClick={() => onUpdate(item.id)}
     >
       <Icon name={name} />
-      <span>{name}</span>
+      <span className='text-xs lg:w-full lg:text-base'>{name}</span>
     </li>
   );
 }

@@ -4,7 +4,7 @@ import { FaRunning, FaGamepad, FaMusic, FaNewspaper } from 'react-icons/fa';
 import { MdMovie, MdPets } from 'react-icons/md';
 
 function getIcon(name: IconName) {
-  const styles = `w-6 h-6 mr-6`;
+  const styles = `w-4 h-4 mb-1 lg:w-6 lg:h-6 lg:mr-6`;
 
   switch (name) {
     case '홈':

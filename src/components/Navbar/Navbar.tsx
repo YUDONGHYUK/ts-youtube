@@ -60,7 +60,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <ul className='w-60 mr-4 p-3 pt-0'>
+      <ul className='hidden md:block w-20 lg:w-60 mr-4 p-3 pt-0'>
         {navList.map((item: NavItemType) => (
           <NavItem key={item.id} item={item} onUpdate={handleUpdate} />
         ))}
