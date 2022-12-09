@@ -5,7 +5,7 @@ import NavItem from '../NavItem/NavItem';
 export type IconName =
   | '홈'
   | '스포츠'
-  | '게임'
+  | '여행'
   | '음악'
   | '영화'
   | '동물'
@@ -21,7 +21,7 @@ export type NavItemType = {
 const NAV_MENU: NavItemType[] = [
   { id: '1', name: '홈', categoryId: null, isActive: true },
   { id: '2', name: '스포츠', categoryId: 17, isActive: false },
-  { id: '3', name: '게임', categoryId: 20, isActive: false },
+  { id: '3', name: '여행', categoryId: 19, isActive: false },
   { id: '4', name: '음악', categoryId: 10, isActive: false },
   { id: '5', name: '영화', categoryId: 30, isActive: false },
   { id: '6', name: '동물', categoryId: 15, isActive: false },
