@@ -2,6 +2,7 @@ import { useLocation, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { FakeYoutube, Video } from '../api/fakeYoutube';
 import { Youtube } from '../api/youtube';
+import { Oval } from 'react-loader-spinner';
 
 import VideoItem from '../components/VideoItem/VideoItem';
 
@@ -21,7 +22,22 @@ export default function Videos() {
 
   return (
     <>
-      {isLoading && <p>Loaindg...</p>}
+      {isLoading && (
+        <div className='flex justify-center items-center w-full'>
+          <Oval
+            height={80}
+            width={80}
+            color='#71717a'
+            wrapperStyle={{}}
+            wrapperClass=''
+            visible={true}
+            ariaLabel='oval-loading'
+            secondaryColor='#52525b'
+            strokeWidth={2}
+            strokeWidthSecondary={2}
+          />
+        </div>
+      )}
       {error && <p>Something is wrong...</p>}
       {videos && (
         <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 gap-y-4'>

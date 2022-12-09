@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <SearchHeader />
-      <main className='flex'>
+      <main className='flex h-full'>
         <Navbar />
         <QueryClientProvider client={queryClient}>
           <Outlet />
