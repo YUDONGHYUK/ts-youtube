@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "HAnX9yC9UsgguFu_dSPYY6kyBnU",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2vWYBD6OtVNJYJEdgPvL0XkzBLk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "OaWNeZpzizg"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-18T01:00:05Z",
+        "channelId": "UCEg25rdRZXg32iwai6N6l0w",
+        "title": "해트트릭 ✅ 영웅 ✅ 손흥민 ⚽️",
+        "description": "스퍼스 플레이 구독하기 ▻ https://bit.ly/3bJW0SS 구독과 좋아요, 그리고 토트넘 한국 공식 계정 팔로우는 센스! Twitter: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OaWNeZpzizg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OaWNeZpzizg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OaWNeZpzizg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Tottenham Hotspur",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-18T01:00:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "bOFue-hMIMs6rDbBBHvsGByrrow",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "BshDe_gNOtA"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-02T17:50:26Z",
+        "channelId": "UCpcTrCXblq78GZrTUTLWeBw",
+        "title": "Hwang Heechan makes himself a Korean hero with winning goal vs Portugal #ShortsFIFAWorldCup",
+        "description": "Follow FIFA World Cup & FIFA Women's World Cup: https://www.instagram.com/fifaworldcup ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BshDe_gNOtA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BshDe_gNOtA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BshDe_gNOtA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "FIFA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-02T17:50:26Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "12nTcqgbJH0OJAi-UvRqeez33i0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Q6vsdnBQyNw"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-03T12:23:37Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "외신도 극찬한 ‘손-황 듀오’…프리미어리거가 해냈다 [9시 뉴스] / KBS 2022 카타르월드컵 2022.12.03.",
+        "description": "손흥민과 황희찬, 결승골을 만들어낸 두 사람은 모두 영국 프리미어리그에서 뛰고 있습니다. 두 선수에 대한 외신들의 높은 평가가 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Q6vsdnBQyNw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Q6vsdnBQyNw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Q6vsdnBQyNw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-03T12:23:37Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "pRNmakT9QJXfgy3wbutc5bFaVP4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "5QUyMtat37E"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-05T14:00:02Z",
+        "channelId": "UCRMA_Nb5VF-YoWApSVeXPVA",
+        "title": "카타르 월드컵에서 날씨보다 더 위험한 것",
+        "description": "군대스리가 #shorts 군대스리가 더 보러가기 ☞ https://www.youtube.com/playlist?list=PLvDaoEdHc685RCjUk1jxCmOKJiE1B-Gc_ ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5QUyMtat37E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5QUyMtat37E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5QUyMtat37E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "디글 클래식 :Diggle Classic",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-05T14:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "cINldDxEpvdnQhdQsXOTUnW_olg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sHnTXtk1W30"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-30T09:01:56Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "[자막뉴스] &quot;1조원 먼저 줄게, 제발...&quot; 폴란드의 이례적인 &#39;FA-50 납기 준수&#39; 요청 / 2022.11.30.",
+        "description": "지난 9월 폴란드와 한국항공우주산업, KAI가 맺은 FA-50 전투기 48대 수출 계약. 30억 달러, 우리 돈으로 4조 원 넘는 규모인데, 두달여 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sHnTXtk1W30/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sHnTXtk1W30/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sHnTXtk1W30/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-30T09:01:56Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "c6Mbr8txYvJffwHl7cAVyf-uV40",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "rk-yNZj3qv0"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-17T21:00:15Z",
+        "channelId": "UCEg25rdRZXg32iwai6N6l0w",
+        "title": "Heung-min Son scores HAT-TRICK in 13 minutes! | HIGHLIGHTS | Spurs 6-2 Leicester City",
+        "description": "Watch highlights from Tottenham Hotspurs' 6-2 win against Leicester City in the Premier League SPURSPLAY is live! Check it out ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rk-yNZj3qv0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rk-yNZj3qv0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rk-yNZj3qv0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Tottenham Hotspur",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-17T21:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "I28UE4Qqqih7_bwTm95MKfo0OL0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "jQhAozpZPUI"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-01T12:13:40Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "내일 최강 포르투갈과 한판승부 “기적에 도전” [9시 뉴스] / KBS 2022 카타르월드컵 2022.12.01.",
+        "description": "안녕하십니까. 9시 뉴스 시작합니다. “우리는 늘 도전자였다” 물러설 수 없는 포르투갈과의 결전을 앞두고, 우리 대표팀 기자회견에서 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jQhAozpZPUI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jQhAozpZPUI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jQhAozpZPUI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-01T12:13:40Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "hpP9C97QCpAngp9PmYvkvEYrLzA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kLX5q_mbbqg"
+      },
+      "snippet": {
+        "publishedAt": "2022-10-15T21:00:19Z",
+        "channelId": "UCEg25rdRZXg32iwai6N6l0w",
+        "title": "Harry Kane scores on 400th career appearance! | HIGHLIGHTS | Spurs 2-0 Everton",
+        "description": "Watch the highlights from Tottenham Hotspur's 2-0 win against Everton in the Premier League. SPURSPLAY is live! Check it out ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kLX5q_mbbqg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kLX5q_mbbqg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kLX5q_mbbqg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Tottenham Hotspur",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-10-15T21:00:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qHme2Z77lVuiCYlNem96mRns47I",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Piiq7slcXK0"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-22T12:32:27Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "[하이라이트 - 아르헨티나 vs 사우디] 메시의 &#39;라스트 댄스&#39; 출발부터 ‘암초’ / KBS 2022 카타르월드컵 2022.11.22.",
+        "description": "한편, 사실상 마지막인 5번째 월드컵 도전에 나선 아르헨티나의 축구 스타, 리오넬 메시에게도 큰 관심이 쏠리고 있는데요. 조금전 끝난 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Piiq7slcXK0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Piiq7slcXK0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Piiq7slcXK0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-22T12:32:27Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zlNADNsBkJw9psWlvn8KDkZ6llc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NJHUzDZ_WL0"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-22T22:10:39Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "[하이라이트 - 프랑스 vs 호주] ‘우승팀 징크스 없다’ 프랑스, 호주에 역전승 / KBS 2022 카타르월드컵 2022.11.23.",
+        "description": "카타르 월드컵의 또 다른 우승 후보죠? 4년 전 러시아 대회 우승팀인 프랑스가 전 대회 우승팀은 다음 대회 1차전 패배라는 징크스를 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NJHUzDZ_WL0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NJHUzDZ_WL0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NJHUzDZ_WL0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-22T22:10:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Bbsiuw734-GX7EW38FJoIwJMp1w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_sFGvhhjyPk"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-03T08:21:47Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "벤버지! 늦게 깨달아서 미안해요 (Feat. 쏘니의 헤드락) [월드컵 하이라이트] / KBS 2022 카타르월드컵",
+        "description": "역전의 드라마를 써 내려간 포르투갈과의 조별리그 3차전, 매번 탈락의 아쉬움에 뜨거운 눈물을 흘렸던 캡틴 손흥민은 드디어 기쁨의 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_sFGvhhjyPk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_sFGvhhjyPk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_sFGvhhjyPk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-03T08:21:47Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "VHMxHXQ7QQxl9rMPfU7yr7_eoh0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "RsTS1FrS5JM"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-03T12:19:05Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "70M 폭풍질주 손흥민, “이번엔 기쁨의 눈물” [9시 뉴스] / KBS 2022 카타르월드컵 2022.12.03.",
+        "description": "역전 결승골은 후반전 추가 시간, 주장 손흥민 선수의 폭풍 질주에서부터 시작됐습니다. 마스크를 쓰고 70미터 넘게 경기장을 가로 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RsTS1FrS5JM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RsTS1FrS5JM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RsTS1FrS5JM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-03T12:19:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "W7efAPSri4Ek5s7CXrk5nycJjX0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "aotUbpw7saA"
+      },
+      "snippet": {
+        "publishedAt": "2022-10-29T21:00:01Z",
+        "channelId": "UCEg25rdRZXg32iwai6N6l0w",
+        "title": "LATE DRAMA as Bentancur completes INCREDIBLE comeback | HIGHLIGHTS | Bournemouth 2-3 Spurs",
+        "description": "Watch the highlights of an incredible Premier League clash as Tottenham Hotspur come from two goals behind to beat AFC ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aotUbpw7saA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aotUbpw7saA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aotUbpw7saA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Tottenham Hotspur",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-10-29T21:00:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "AWR-TtC-uAh77D_t1s6A6jEA4Yw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "urrn1lJ0RnA"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-03T01:00:15Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "[하이라이트 : 대한민국 vs 포르투갈] 한국, 포르투갈에 극적인 역전승...극적인 16강행 / 16강전 상대는 브라질 / KBS 2022 카타르월드컵 2022.12.03.",
+        "description": "카타르 월드컵에서 조별리그 마지막 경기에서 대한민국이 기적적으로 16강에 올랐습니다. 대한민국은 포르투갈을 극적으로 물리치고 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/urrn1lJ0RnA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/urrn1lJ0RnA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/urrn1lJ0RnA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-03T01:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "NibHP75cC5Fue1g2Wxy0DbWpFdE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "5V0FUCG7Tm0"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-23T08:30:01Z",
+        "channelId": "UCnXNukjRxXGD8aeZGRV-lYg",
+        "title": "김하성 현지해설 &quot;홈런이라고 생각했던 것 같은데…&quot;  #SPORTSTIME",
+        "description": "김하성 #MLB #샌디에이고 #멀티 히트 #현지해설 23일, 샌프란시스코전에서 김하성이 장타 포함 멀티 히트를 기록했다. 전날 무안타 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5V0FUCG7Tm0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5V0FUCG7Tm0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5V0FUCG7Tm0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "스포츠타임",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-23T08:30:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "gDwLifHhYgj9OtiRpDp6OM7CB04",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "O6K4kbfjew8"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-21T22:57:38Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "[하이라이트 - 네덜란드 vs 세네갈] 골키퍼 신들린 선방…승패는 후반전 막판에 갈렸다/ KBS 2022 카타르월드컵 2022.11.22.",
+        "description": "8년 만에 월드컵에 돌아온 '오렌지 군단' 네덜란드는 A조 조별리그 1차전에서 아프리카의 강호 세네갈을 물리쳤습니다. 골키퍼의 선방 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/O6K4kbfjew8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/O6K4kbfjew8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/O6K4kbfjew8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-21T22:57:38Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Cl7z5-c3PPGjGG4N36g2gq1Yl-4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "edpT18ejTV4"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-24T10:27:57Z",
+        "channelId": "UCYRrUD5v5j_Ei8sKOo7mhoQ",
+        "title": "독일이 졌다고?? #shorts",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/edpT18ejTV4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/edpT18ejTV4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/edpT18ejTV4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "엠빅뉴스",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-24T10:27:57Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Z1Ww3w-PpfhffMdc-IY1nUYuTzw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "g7twjLHC4_4"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-03T02:41:15Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "&#39;월클&#39;들만 한다는 &#39;그 패스&#39; 손흥민의 역대 월드컵 클라스 - [월드컵 하이라이트] / KBS 2022 카타르월드컵",
+        "description": "손흥민의 월드컵 도전이 결실을 보았습니다. 만 22살 나이로 첫 월드컵 무대에 섰던 손흥민은 2014년 브라질 월드컵 조별리그 2차전 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/g7twjLHC4_4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/g7twjLHC4_4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/g7twjLHC4_4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-03T02:41:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qFoCj9KUEAqrWR9eoy6mxh-RK10",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WBTZ5rLVpaQ"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-02T17:36:13Z",
+        "channelId": "UCpcTrCXblq78GZrTUTLWeBw",
+        "title": "Kim Younggwon pounces on deflection off Ronaldo to score for Korea Republic #ShortsFIFAWorldCup",
+        "description": "Follow FIFA World Cup & FIFA Women's World Cup: https://www.instagram.com/fifaworldcup ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WBTZ5rLVpaQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WBTZ5rLVpaQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WBTZ5rLVpaQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "FIFA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-02T17:36:13Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "DNAgkF1pdOgwOM8ycbsyK5irwFs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "zGN5HmuxjHA"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-04T01:03:00Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "[하이라이트:아르헨티나 vs 호주] ‘토너먼트 첫 골’ 메시, 아르헨티나 8강 진출 / ‘오렌지 군단’ 네덜란드도 8강 / KBS 2022 카타르월드컵 2022.12.04.",
+        "description": "월드컵 '우승 후보' 아르헨티나가 에이스 메시의 골에 힘입어 호주를 꺾고 8강에 진출했습니다. 메시는 자신의 1000번째 경기에서 첫 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zGN5HmuxjHA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zGN5HmuxjHA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zGN5HmuxjHA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-04T01:03:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9fECp_gQJNF1ikuatjIXkQma1ao",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "RT2ceLo_dxU"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-03T12:18:38Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "가슴 졸인 8분…“다함께 울었다” [9시 뉴스] / KBS 2022 카타르월드컵 2022.12.03.",
+        "description": "짜릿한 역전승이 끝난 뒤였지만 선수들도 그렇고 국민들도 그렇고 긴장을 놓을 수가 없었습니다. 또 다른 경기, 우루과이-가나전의 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RT2ceLo_dxU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RT2ceLo_dxU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RT2ceLo_dxU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-03T12:18:38Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4o_9FcO9lW3ujhVwaOr4Rc4xTl0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "oFfD-AsfoFU"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-01T13:05:55Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "북중미 월드컵부터 ‘조별리그 승부차기’ 검토 [9시 뉴스] / KBS 2022 카타르월드컵 2022.12.01.",
+        "description": "국제축구연맹 피파가 2026년 북중미 월드컵에선 조별리그부터 승부차기를 하는 방안을 검토하고 있다는 외신 보도가 나왔습니다.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oFfD-AsfoFU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oFfD-AsfoFU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oFfD-AsfoFU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-01T13:05:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "gsXoyNK_z-m1dpS8DOCBah5y2CM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WhEctFNCAMk"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-01T13:05:39Z",
+        "channelId": "UCcQTRi69dsVYHN3exePtZ1A",
+        "title": "호주, 16년 만에 16강행…아시아축구연맹 첫 16강 [9시 뉴스] / KBS 2022 카타르월드컵 2022.12.01.",
+        "description": "'캥거루 군단' 호주는 덴마크를 꺾고 2006년 대회 이후 16년 만에 16강에 진출했습니다. 호주는 아시아축구연맹 소속 국가 중 조별 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WhEctFNCAMk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WhEctFNCAMk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WhEctFNCAMk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "KBS News",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-01T13:05:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "j5Nh4gOZSMkmPKUejkFByqY_MEI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "jMSZoJJoe9Y"
+      },
+      "snippet": {
+        "publishedAt": "2022-08-15T17:42:32Z",
+        "channelId": "UC4SUUloEcrgjsxbmy_rQQXA",
+        "title": "Tuchel vs Conte! Romero vs Cucurella! Chelsea vs Spurs! (2-2 Goals Highlights Hair Pull Fight)",
+        "description": "Subscribe to 442oons: http://bit.ly/442oonsSUB ⚽️ Business Enquiries: 442oons@delkatalents.com Book a personalised ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jMSZoJJoe9Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jMSZoJJoe9Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jMSZoJJoe9Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "442oons",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-08-15T17:42:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ZT5Vy4u45tXEhzg78-kt9vbFJ8w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kT--kwxuQq0"
+      },
+      "snippet": {
+        "publishedAt": "2018-09-13T16:02:31Z",
+        "channelId": "UCEg25rdRZXg32iwai6N6l0w",
+        "title": "HEUNG-MIN SON RETURNS TO HOTSPUR WAY AFTER ASIAN GAMES GOLD MEDAL!",
+        "description": "Watch Heung-min Son arrive at Hotspur Way and meet his teammates for the first time since winning a gold medal at the 2018 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kT--kwxuQq0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kT--kwxuQq0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kT--kwxuQq0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Tottenham Hotspur",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-09-13T16:02:31Z"
+      }
+    }
+  ]
+}

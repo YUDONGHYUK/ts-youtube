@@ -9,8 +9,7 @@ export default function SearchHeader() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setText('');
-    navigate(`/videos/${text}`);
+    navigate(`videos/${text}`);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

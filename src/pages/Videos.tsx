@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { FakeYoutube, Video } from '../api/fakeYoutube';
 import { Youtube } from '../api/youtube';
@@ -6,14 +6,16 @@ import { Youtube } from '../api/youtube';
 import VideoItem from '../components/VideoItem/VideoItem';
 
 export default function Videos() {
+  const location = useLocation();
+  const categoryId = location.state?.categoryId;
   const { keyword } = useParams();
   const {
     isLoading,
     error,
     data: videos,
   } = useQuery<Video[], Error, Video[]>(
-    ['videos', keyword],
-    async () => FakeYoutube.search(keyword),
+    ['videos', keyword, categoryId],
+    async () => FakeYoutube.search(keyword, categoryId),
     { staleTime: 1000 * 60 * 1 }
   );
 
