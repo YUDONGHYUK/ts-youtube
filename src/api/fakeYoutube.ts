@@ -1,21 +1,5 @@
 import axios from 'axios';
-
-export type Video = {
-  id: string;
-  snippet: {
-    publishedAt: string;
-    title: string;
-    description: string;
-    thumbnails: {
-      medium: {
-        url: string;
-        width: string;
-        height: string;
-      };
-    };
-    channelTitle: string;
-  };
-};
+import { Channel, Video } from '../types';
 
 export const FakeYoutube = (function () {
   return {
@@ -35,8 +19,7 @@ export const FakeYoutube = (function () {
 
       return items;
     },
-    searchByCategoryId: async function (): // categoryId: string | null
-    Promise<Video[]> {
+    searchByCategoryId: async function (): Promise<Video[]> {
       const { data } = await axios.get(`/videos/category.json`);
       const items = data.items.map((item: any) => ({
         ...item,
@@ -50,7 +33,7 @@ export const FakeYoutube = (function () {
 
       return data.items;
     },
-    channelDetail: async function () {
+    channelDetail: async function (): Promise<Channel[]> {
       const { data } = await axios.get('/videos/channel.json');
 
       return data.items[0];

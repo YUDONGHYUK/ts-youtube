@@ -1,20 +1,18 @@
 import { useQuery } from '@tanstack/react-query';
 import { useLocation } from 'react-router-dom';
 import RelatedVideos from '../components/RelatedVideos/RelatedVideos';
-import { FakeYoutube } from '../api/fakeYoutube';
 import { Youtube } from '../api/youtube';
+// import { FakeYoutube } from '../api/fakeYoutube';
 
 export default function VideoDetail() {
   const { state: video } = useLocation();
-  const { title, channelTitle, description } = video.snippet;
+  const { title, channelTitle, description, channelId } = video.snippet;
 
   const { data: channel } = useQuery(
     ['channel', video.id],
-    async () => FakeYoutube.channelDetail(),
+    async () => Youtube.channelDetail(channelId),
     { staleTime: 1000 * 60 * 5 }
   );
-
-  console.log();
 
   return (
     <section className='flex flex-col lg:flex-row'>

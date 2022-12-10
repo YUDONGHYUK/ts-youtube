@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
-import { FakeYoutube } from '../../api/fakeYoutube';
-import { Youtube } from '../../api/youtube';
-import VideoItem from '../VideoItem/VideoItem';
 import { Oval } from 'react-loader-spinner';
+import VideoItem from '../VideoItem/VideoItem';
+import { Youtube } from '../../api/youtube';
+// import { FakeYoutube } from '../../api/fakeYoutube';
 
 type RelatedVideosProps = {
   id: string;
@@ -13,7 +13,7 @@ export default function RelatedVideos({ id }: RelatedVideosProps) {
     isLoading,
     error,
     data: videos,
-  } = useQuery(['related', id], async () => FakeYoutube.relatedVideos(), {
+  } = useQuery(['related', id], async () => Youtube.relatedVideos(id), {
     staleTime: 1000 * 60 * 5,
   });
 

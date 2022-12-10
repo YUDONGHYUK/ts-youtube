@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Video } from '../../api/fakeYoutube';
+import { Video } from '../../types';
 import { timeAgo } from '../../utils/timeAgo';
 
 type VideoItemProps = {
