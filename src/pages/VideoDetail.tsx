@@ -2,10 +2,13 @@ import { useQuery } from '@tanstack/react-query';
 import { useLocation } from 'react-router-dom';
 import RelatedVideos from '../components/RelatedVideos/RelatedVideos';
 import { Youtube } from '../api/youtube';
+import { Video } from '../types';
 // import { FakeYoutube } from '../api/fakeYoutube';
 
 export default function VideoDetail() {
-  const { state: video } = useLocation();
+  // const { state: video } = useLocation()
+  const location = useLocation();
+  const video = location.state as Video;
   const { title, channelTitle, description, channelId } = video.snippet;
 
   const { data: channel } = useQuery(
