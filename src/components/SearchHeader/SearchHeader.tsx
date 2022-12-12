@@ -9,7 +9,7 @@ export default function SearchHeader() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    navigate(`videos/${text}`);
+    navigate(`videos/${text}`, { state: null });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,7 +22,7 @@ export default function SearchHeader() {
 
   return (
     <header className='w-full flex py-4 px-8 mb-4 text-2xl '>
-      <Link to='/' className='flex items-center'>
+      <Link to='/' state={null} className='flex items-center'>
         <BsYoutube className='text-3xl text-brand' />
         <h1 className='font-bold ml-2'>Youtube</h1>
       </Link>

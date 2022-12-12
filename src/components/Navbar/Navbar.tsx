@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import NavItem from '../NavItem/NavItem';
 
 export type IconName =
@@ -31,6 +31,7 @@ const NAV_MENU: NavItemType[] = [
 export default function Navbar() {
   const params = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [navList, setNavList] = useState(NAV_MENU);
 
   const handleUpdate = (activeId: string) => {
@@ -46,17 +47,24 @@ export default function Navbar() {
     navigate('/', { state: activeCategory });
   };
 
-  const dynamicParam = Object.keys(params)[0];
+  const paramsKey = Object.values(params)[0];
 
-  // 검색 및 VideoDetail 이동시 navItem 비활성화
   useEffect(() => {
-    dynamicParam &&
+    // 검색 및 VideoDetail 이동시 navItem 비활성화
+    if (paramsKey) {
+      setNavList((prev) => prev.map((item) => ({ ...item, isActive: false })));
+    }
+
+    if (!location.state && !paramsKey) {
       setNavList((prev) =>
-        prev.map((item) =>
-          item.isActive === true ? { ...item, isActive: false } : item
-        )
+        prev.map((item) => {
+          return item.id === '1'
+            ? { ...item, isActive: true }
+            : { ...item, isActive: false };
+        })
       );
-  }, [dynamicParam]);
+    }
+  }, [paramsKey, location.state]);
 
   return (
     <nav>
