@@ -43,12 +43,8 @@ export const Youtube = (function () {
           type: 'video',
         },
       });
-      const items = data.items.map((item: any) => ({
-        ...item,
-        id: item.id.videoId,
-      }));
 
-      return items;
+      return data.items;
     },
     mostPopular: async function (): Promise<Video[]> {
       const { data } = await customAxios('videos', {
