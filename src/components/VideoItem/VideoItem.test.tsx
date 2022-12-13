@@ -1,25 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import {
-  createMemoryRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-  useLocation,
-} from 'react-router-dom';
+import { Route, RouterProvider, useLocation } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
+import VideoItem from './VideoItem';
+import { createWithMemoryRouter } from '../../tests/utils';
 import { timeAgo } from '../../utils/timeAgo';
 import { fakeVideo as video } from '../../tests/videoData';
-import VideoItem from './VideoItem';
 
 const { publishedAt, title, thumbnails, channelTitle } = video.snippet;
 
 describe('VideoItem', () => {
   it('renders correctly', () => {
-    const router = createMemoryRouter(
-      createRoutesFromElements(
-        <Route path='/' element={<VideoItem video={video} />} />
-      ),
-      { initialEntries: ['/'] }
+    const router = createWithMemoryRouter(
+      <Route path='/' element={<VideoItem video={video} />} />
     );
 
     render(<RouterProvider router={router} />);
@@ -39,11 +31,8 @@ describe('VideoItem', () => {
   });
 
   it('renders list type correctly', () => {
-    const router = createMemoryRouter(
-      createRoutesFromElements(
-        <Route path='/' element={<VideoItem video={video} type='list' />} />
-      ),
-      { initialEntries: ['/'] }
+    const router = createWithMemoryRouter(
+      <Route path='/' element={<VideoItem video={video} type='list' />} />
     );
 
     render(<RouterProvider router={router} />);
@@ -77,17 +66,14 @@ describe('VideoItem', () => {
       return <pre>{JSON.stringify(useLocation().state)}</pre>;
     }
 
-    const router = createMemoryRouter(
-      createRoutesFromElements(
-        <>
-          <Route path='/' element={<VideoItem video={video} />} />
-          <Route
-            path={`/videos/watch/${video.id}`}
-            element={<LocationStateDisplay />}
-          />
-        </>
-      ),
-      { initialEntries: ['/'] }
+    const router = createWithMemoryRouter(
+      <>
+        <Route path='/' element={<VideoItem video={video} />} />
+        <Route
+          path={`/videos/watch/${video.id}`}
+          element={<LocationStateDisplay />}
+        />
+      </>
     );
 
     render(<RouterProvider router={router} />);

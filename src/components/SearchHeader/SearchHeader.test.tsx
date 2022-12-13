@@ -1,18 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import {
-  createMemoryRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from 'react-router-dom';
+import { Route, RouterProvider } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import SearchHeader from './SearchHeader';
+import { createWithMemoryRouter } from '../../tests/utils';
 
 describe('SearchHeader', () => {
   it('renders correctly', () => {
-    const router = createMemoryRouter(
-      createRoutesFromElements(<Route path='/' element={<SearchHeader />} />),
-      { initialEntries: ['/'] }
+    const router = createWithMemoryRouter(
+      <Route path='/' element={<SearchHeader />} />
     );
 
     render(<RouterProvider router={router} />);
@@ -34,11 +29,9 @@ describe('SearchHeader', () => {
   });
 
   it('renders the correct keyword to the input element', () => {
-    const router = createMemoryRouter(
-      createRoutesFromElements(
-        <Route path='/:keyword' element={<SearchHeader />} />
-      ),
-      { initialEntries: ['/react'] }
+    const router = createWithMemoryRouter(
+      <Route path='/:keyword' element={<SearchHeader />} />,
+      ['/react']
     );
 
     render(<RouterProvider router={router} />);
@@ -51,17 +44,14 @@ describe('SearchHeader', () => {
     userEvent.setup();
 
     const searchKeyword = 'fake-keyword';
-    const router = createMemoryRouter(
-      createRoutesFromElements(
-        <>
-          <Route path='/' element={<SearchHeader />} />
-          <Route
-            path={`/videos/:${searchKeyword}`}
-            element={<p>{`Search result is ${searchKeyword}`}</p>}
-          />
-        </>
-      ),
-      { initialEntries: ['/'] }
+    const router = createWithMemoryRouter(
+      <>
+        <Route path='/' element={<SearchHeader />} />
+        <Route
+          path={`/videos/:${searchKeyword}`}
+          element={<p>{`Search result is ${searchKeyword}`}</p>}
+        />
+      </>
     );
 
     render(<RouterProvider router={router} />);
