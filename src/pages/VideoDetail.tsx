@@ -1,21 +1,12 @@
-import { useQuery } from '@tanstack/react-query';
 import { useLocation } from 'react-router-dom';
 import RelatedVideos from '../components/RelatedVideos/RelatedVideos';
-import { Youtube } from '../api/youtube';
+import ChannelInfo from '../components/ChannelInfo/ChannelInfo';
 import { Video } from '../types';
-// import { FakeYoutube } from '../api/fakeYoutube';
 
 export default function VideoDetail() {
-  // const { state: video } = useLocation()
   const location = useLocation();
   const video = location.state as Video;
   const { title, channelTitle, description, channelId } = video.snippet;
-
-  const { data: channel } = useQuery(
-    ['channel', video.id],
-    async () => Youtube.channelDetail(channelId),
-    { staleTime: 1000 * 60 * 5 }
-  );
 
   return (
     <section className='flex flex-col lg:flex-row'>
@@ -30,14 +21,7 @@ export default function VideoDetail() {
         ></iframe>
         <div className='mt-2'>
           <h3 className='text-xl font-bold'>{title}</h3>
-          <div className='flex items-center my-4'>
-            <img
-              className='w-10 h-10 rounded-full'
-              src={channel?.snippet.thumbnails.medium.url}
-              alt={channelTitle}
-            />
-            <span className='text-base font-medium ml-2'>{channelTitle}</span>
-          </div>
+          <ChannelInfo id={channelId} title={channelTitle} />
           <pre className='whitespace-pre-wrap p-2 rounded-xl bg-zinc-800 text-sm'>
             {description}
           </pre>
