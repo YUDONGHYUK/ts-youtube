@@ -1,4 +1,6 @@
-export const fakeVideo = {
+import { Video } from '../types';
+
+export const fakeVideo: Video = {
   id: '1',
   snippet: {
     publishedAt: '2007-08-23T00:34:43Z',
@@ -16,7 +18,7 @@ export const fakeVideo = {
   },
 };
 
-export const fakeVideos = [
+export const fakeVideos: Video[] = [
   {
     id: '1',
     snippet: {
