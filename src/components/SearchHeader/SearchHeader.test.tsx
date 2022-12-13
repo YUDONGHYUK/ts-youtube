@@ -1,21 +1,19 @@
 import { render, screen } from '@testing-library/react';
-import { createMemoryRouter, RouterProvider } from 'react-router-dom';
+import {
+  createMemoryRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import SearchHeader from './SearchHeader';
 
 describe('SearchHeader', () => {
   it('renders correctly', () => {
-    const routes = [
-      {
-        path: '/',
-        element: <SearchHeader />,
-      },
-      {
-        path: '/videos',
-      },
-    ];
-
-    const router = createMemoryRouter(routes, { initialEntries: ['/'] });
+    const router = createMemoryRouter(
+      createRoutesFromElements(<Route path='/' element={<SearchHeader />} />),
+      { initialEntries: ['/'] }
+    );
 
     render(<RouterProvider router={router} />);
 
@@ -36,16 +34,12 @@ describe('SearchHeader', () => {
   });
 
   it('renders the correct keyword to the input element', () => {
-    const routes = [
-      {
-        path: '/:keyword',
-        element: <SearchHeader />,
-      },
-    ];
-
-    const router = createMemoryRouter(routes, {
-      initialEntries: ['/react'],
-    });
+    const router = createMemoryRouter(
+      createRoutesFromElements(
+        <Route path='/:keyword' element={<SearchHeader />} />
+      ),
+      { initialEntries: ['/react'] }
+    );
 
     render(<RouterProvider router={router} />);
 
@@ -57,18 +51,18 @@ describe('SearchHeader', () => {
     userEvent.setup();
 
     const searchKeyword = 'fake-keyword';
-    const routes = [
-      {
-        path: '/',
-        element: <SearchHeader />,
-      },
-      {
-        path: `/videos/:${searchKeyword}`,
-        element: <p>{`Search result is ${searchKeyword}`}</p>,
-      },
-    ];
-
-    const router = createMemoryRouter(routes, { initialEntries: ['/'] });
+    const router = createMemoryRouter(
+      createRoutesFromElements(
+        <>
+          <Route path='/' element={<SearchHeader />} />
+          <Route
+            path={`/videos/:${searchKeyword}`}
+            element={<p>{`Search result is ${searchKeyword}`}</p>}
+          />
+        </>
+      ),
+      { initialEntries: ['/'] }
+    );
 
     render(<RouterProvider router={router} />);
 

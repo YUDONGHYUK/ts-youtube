@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import {
   createMemoryRouter,
+  createRoutesFromElements,
+  Route,
   RouterProvider,
   useLocation,
 } from 'react-router-dom';
@@ -13,14 +15,12 @@ const { publishedAt, title, thumbnails, channelTitle } = video.snippet;
 
 describe('VideoItem', () => {
   it('renders correctly', () => {
-    const routes = [
-      {
-        path: '/',
-        element: <VideoItem video={video} />,
-      },
-    ];
-
-    const router = createMemoryRouter(routes, { initialEntries: ['/'] });
+    const router = createMemoryRouter(
+      createRoutesFromElements(
+        <Route path='/' element={<VideoItem video={video} />} />
+      ),
+      { initialEntries: ['/'] }
+    );
 
     render(<RouterProvider router={router} />);
 
@@ -39,14 +39,12 @@ describe('VideoItem', () => {
   });
 
   it('renders list type correctly', () => {
-    const routes = [
-      {
-        path: '/',
-        element: <VideoItem video={video} type='list' />,
-      },
-    ];
-
-    const router = createMemoryRouter(routes, { initialEntries: ['/'] });
+    const router = createMemoryRouter(
+      createRoutesFromElements(
+        <Route path='/' element={<VideoItem video={video} type='list' />} />
+      ),
+      { initialEntries: ['/'] }
+    );
 
     render(<RouterProvider router={router} />);
 
@@ -79,18 +77,18 @@ describe('VideoItem', () => {
       return <pre>{JSON.stringify(useLocation().state)}</pre>;
     }
 
-    const routes = [
-      {
-        path: '/',
-        element: <VideoItem video={video} />,
-      },
-      {
-        path: `/videos/watch/${video.id}`,
-        element: <LocationStateDisplay />,
-      },
-    ];
-
-    const router = createMemoryRouter(routes, { initialEntries: ['/'] });
+    const router = createMemoryRouter(
+      createRoutesFromElements(
+        <>
+          <Route path='/' element={<VideoItem video={video} />} />
+          <Route
+            path={`/videos/watch/${video.id}`}
+            element={<LocationStateDisplay />}
+          />
+        </>
+      ),
+      { initialEntries: ['/'] }
+    );
 
     render(<RouterProvider router={router} />);
 
