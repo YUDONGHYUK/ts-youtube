@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { Youtube } from '../../api/youtube';
-// import { FakeYoutube } from '../api/fakeYoutube';
+import { useYoutubeApi } from '../context/YoutubeContext';
 
 type ChannelInfoProps = {
   id: string;
@@ -8,9 +7,10 @@ type ChannelInfoProps = {
 };
 
 export default function ChannelInfo({ id, title }: ChannelInfoProps) {
+  const youtube = useYoutubeApi();
   const { data: channel } = useQuery(
     ['channel', id],
-    async () => Youtube.channelDetail(id),
+    async () => youtube.channelDetail(id),
     { staleTime: 1000 * 60 * 5 }
   );
 

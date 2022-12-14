@@ -1,19 +1,19 @@
 import { useQuery } from '@tanstack/react-query';
 import { Oval } from 'react-loader-spinner';
+import { useYoutubeApi } from '../context/YoutubeContext';
 import VideoItem from '../VideoItem/VideoItem';
-import { Youtube } from '../../api/youtube';
-// import { FakeYoutube } from '../../api/fakeYoutube';
 
 type RelatedVideosProps = {
   id: string;
 };
 
 export default function RelatedVideos({ id }: RelatedVideosProps) {
+  const youtube = useYoutubeApi();
   const {
     isLoading,
     error,
     data: videos,
-  } = useQuery(['related', id], async () => Youtube.relatedVideos(id), {
+  } = useQuery(['related', id], async () => youtube.relatedVideos(id), {
     staleTime: 1000 * 60 * 5,
   });
 
