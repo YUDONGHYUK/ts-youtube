@@ -1,20 +1,27 @@
 import { customAxios } from './customAxios';
 import { Video } from '../types';
 
-export const Youtube = (function () {
+export type YoutubeApi = {
+  search: (
+    keyword: string | undefined,
+    categoryId: string | null
+  ) => Promise<Video[]>;
+  searchByKeyword: (keyword: string | undefined) => Promise<Video[]>;
+  searchByCategoryId: (categoryId: string | null) => Promise<Video[]>;
+  mostPopular: () => Promise<Video[]>;
+  channelDetail: (id: string) => Promise<Video>;
+  relatedVideos: (keyword: string) => Promise<Video[]>;
+};
+
+export const Youtube: YoutubeApi = (function () {
   return {
-    search: async function (
-      keyword: string | undefined,
-      categoryId: string | null | undefined
-    ) {
+    search: async function (keyword, categoryId) {
       if (keyword) return this.searchByKeyword(keyword);
       return categoryId
         ? this.searchByCategoryId(categoryId)
         : this.mostPopular();
     },
-    searchByKeyword: async function (
-      keyword: string | undefined
-    ): Promise<Video[]> {
+    searchByKeyword: async function (keyword) {
       const { data } = await customAxios.get('search', {
         params: {
           part: 'snippet',
@@ -30,9 +37,7 @@ export const Youtube = (function () {
 
       return items;
     },
-    searchByCategoryId: async function (
-      categoryId: string | null | undefined
-    ): Promise<Video[]> {
+    searchByCategoryId: async function (categoryId) {
       const { data } = await customAxios.get('videos', {
         params: {
           part: 'snippet',
@@ -46,7 +51,7 @@ export const Youtube = (function () {
 
       return data.items;
     },
-    mostPopular: async function (): Promise<Video[]> {
+    mostPopular: async function () {
       const { data } = await customAxios('videos', {
         params: {
           part: 'snippet',
@@ -58,7 +63,7 @@ export const Youtube = (function () {
 
       return data.items;
     },
-    channelDetail: async function (id: string) {
+    channelDetail: async function (id) {
       const { data } = await customAxios('channels', {
         params: {
           part: 'snippet,statistics',
@@ -68,7 +73,7 @@ export const Youtube = (function () {
 
       return data.items[0];
     },
-    relatedVideos: async function (keyword: string) {
+    relatedVideos: async function (keyword) {
       const { data } = await customAxios('search', {
         params: {
           part: 'snippet',
