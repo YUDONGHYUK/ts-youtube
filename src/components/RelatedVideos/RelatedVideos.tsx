@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { Oval } from 'react-loader-spinner';
-import { useYoutubeApi } from '../context/YoutubeContext';
+import { useYoutubeApi } from '../../context/YoutubeContext';
 import VideoItem from '../VideoItem/VideoItem';
 
 type RelatedVideosProps = {

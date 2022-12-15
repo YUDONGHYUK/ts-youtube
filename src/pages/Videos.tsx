@@ -1,11 +1,9 @@
 import { useLocation, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { Oval } from 'react-loader-spinner';
-import { useYoutubeApi } from '../components/context/YoutubeContext';
+import { useYoutubeApi } from '../context/YoutubeContext';
 import VideoItem from '../components/VideoItem/VideoItem';
 import { Video } from '../types';
-// import { Youtube } from '../api/youtube';
-// import { FakeYoutube, Video } from '../api/fakeYoutube';
 
 export default function Videos() {
   const location = useLocation();

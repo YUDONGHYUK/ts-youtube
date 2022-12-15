@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
+import { Youtube } from '../api/youtube';
 import { YoutubeContext } from './YoutubeContext';
-import { Youtube } from '../../api/youtube';
 
 type YoutubeContextProviderProps = {
   children: ReactNode;

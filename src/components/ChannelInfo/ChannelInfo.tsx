@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { useYoutubeApi } from '../context/YoutubeContext';
+import { useYoutubeApi } from '../../context/YoutubeContext';
 
 type ChannelInfoProps = {
   id: string;
