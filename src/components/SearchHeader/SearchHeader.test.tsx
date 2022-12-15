@@ -6,11 +6,9 @@ import { createWithMemoryRouter } from '../../tests/utils';
 
 describe('SearchHeader', () => {
   it('renders correctly', () => {
-    const router = createWithMemoryRouter(
-      <Route path='/' element={<SearchHeader />} />
+    render(
+      createWithMemoryRouter(<Route path='/' element={<SearchHeader />} />)
     );
-
-    render(<RouterProvider router={router} />);
 
     const linkElement = screen.getByRole('link');
     expect(linkElement).toBeInTheDocument();
@@ -29,12 +27,12 @@ describe('SearchHeader', () => {
   });
 
   it('renders the correct keyword to the input element', () => {
-    const router = createWithMemoryRouter(
-      <Route path='/:keyword' element={<SearchHeader />} />,
-      ['/react']
+    render(
+      createWithMemoryRouter(
+        <Route path='/:keyword' element={<SearchHeader />} />,
+        ['/react']
+      )
     );
-
-    render(<RouterProvider router={router} />);
 
     const inputElement = screen.getByDisplayValue('react');
     expect(inputElement).toBeInTheDocument();
@@ -44,17 +42,18 @@ describe('SearchHeader', () => {
     userEvent.setup();
 
     const searchKeyword = 'fake-keyword';
-    const router = createWithMemoryRouter(
-      <>
-        <Route path='/' element={<SearchHeader />} />
-        <Route
-          path={`/videos/:${searchKeyword}`}
-          element={<p>{`Search result is ${searchKeyword}`}</p>}
-        />
-      </>
-    );
 
-    render(<RouterProvider router={router} />);
+    render(
+      createWithMemoryRouter(
+        <>
+          <Route path='/' element={<SearchHeader />} />
+          <Route
+            path={`/videos/:${searchKeyword}`}
+            element={<p>{`Search result is ${searchKeyword}`}</p>}
+          />
+        </>
+      )
+    );
 
     const inputElement = screen.getByRole('textbox');
     await userEvent.type(inputElement, searchKeyword);

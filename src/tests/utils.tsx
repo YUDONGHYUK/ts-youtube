@@ -1,11 +1,17 @@
 import { ReactNode } from 'react';
-import { createMemoryRouter, createRoutesFromElements } from 'react-router-dom';
+import {
+  createMemoryRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from 'react-router-dom';
 
 export function createWithMemoryRouter(
   routes: ReactNode,
   initialEntries: string[] = ['/']
 ) {
-  return createMemoryRouter(createRoutesFromElements(routes), {
+  const router = createMemoryRouter(createRoutesFromElements(routes), {
     initialEntries,
   });
+
+  return <RouterProvider router={router} />;
 }

@@ -10,11 +10,11 @@ const { publishedAt, title, thumbnails, channelTitle } = video.snippet;
 
 describe('VideoItem', () => {
   it('renders correctly', () => {
-    const router = createWithMemoryRouter(
-      <Route path='/' element={<VideoItem video={video} />} />
+    render(
+      createWithMemoryRouter(
+        <Route path='/' element={<VideoItem video={video} />} />
+      )
     );
-
-    render(<RouterProvider router={router} />);
 
     const imgElement = screen.getByRole('img');
     expect(imgElement).toHaveAttribute('src', thumbnails.medium.url);
@@ -31,11 +31,11 @@ describe('VideoItem', () => {
   });
 
   it('renders list type correctly', () => {
-    const router = createWithMemoryRouter(
-      <Route path='/' element={<VideoItem video={video} type='list' />} />
+    render(
+      createWithMemoryRouter(
+        <Route path='/' element={<VideoItem video={video} type='list' />} />
+      )
     );
-
-    render(<RouterProvider router={router} />);
 
     const videoItemElement = screen.getByRole('listitem');
     expect(videoItemElement).toHaveClass('flex gap-2 mb-2', { exact: false });
@@ -66,17 +66,17 @@ describe('VideoItem', () => {
       return <pre>{JSON.stringify(useLocation().state)}</pre>;
     }
 
-    const router = createWithMemoryRouter(
-      <>
-        <Route path='/' element={<VideoItem video={video} />} />
-        <Route
-          path={`/videos/watch/${video.id}`}
-          element={<LocationStateDisplay />}
-        />
-      </>
+    render(
+      createWithMemoryRouter(
+        <>
+          <Route path='/' element={<VideoItem video={video} />} />
+          <Route
+            path={`/videos/watch/${video.id}`}
+            element={<LocationStateDisplay />}
+          />
+        </>
+      )
     );
-
-    render(<RouterProvider router={router} />);
 
     const videoItemElement = screen.getByRole('listitem');
     await userEvent.click(videoItemElement);
