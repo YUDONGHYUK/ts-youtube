@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Route, RouterProvider } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import SearchHeader from './SearchHeader';
 import { createWithMemoryRouter } from '../../tests/utils';

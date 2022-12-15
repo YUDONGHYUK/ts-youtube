@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Route, RouterProvider, useLocation } from 'react-router-dom';
+import { Route, useLocation } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import VideoItem from './VideoItem';
 import { createWithMemoryRouter } from '../../tests/utils';
