@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { Oval } from 'react-loader-spinner';
 import { useYoutubeApi } from '../../context/YoutubeContext';
+import { Oval } from 'react-loader-spinner';
 import VideoItem from '../VideoItem/VideoItem';
 
 type RelatedVideosProps = {
@@ -20,7 +20,10 @@ export default function RelatedVideos({ id }: RelatedVideosProps) {
   return (
     <>
       {isLoading && (
-        <div className='flex justify-center items-center w-full'>
+        <div
+          className='flex justify-center items-center w-full'
+          data-testId='loading-sppiner'
+        >
           <Oval
             height={50}
             width={50}
