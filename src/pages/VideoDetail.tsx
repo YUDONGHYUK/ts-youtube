@@ -16,7 +16,7 @@ export default function VideoDetail() {
           title={title}
           width='100%'
           height='600'
-          src={`http://www.youtube.com/embed/${video.id}`}
+          src={`https://www.youtube.com/embed/${video.id}`}
           frameBorder='0'
         ></iframe>
         <div className='mt-2'>
