@@ -17,6 +17,7 @@ export default function VideoDetail() {
           width='100%'
           height='600'
           src={`https://www.youtube.com/embed/${video.id}`}
+          allowFullScreen
           frameBorder='0'
         ></iframe>
         <div className='mt-2'>
