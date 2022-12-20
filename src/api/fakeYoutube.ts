@@ -33,7 +33,7 @@ export const FakeYoutube = (function () {
 
       return data.items;
     },
-    channelDetail: async function (): Promise<Channel[]> {
+    channelDetail: async function (): Promise<Channel> {
       const { data } = await axios.get('/videos/channel.json');
 
       return data.items[0];

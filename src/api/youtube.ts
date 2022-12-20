@@ -1,5 +1,5 @@
 import { customAxios } from './customAxios';
-import { Video } from '../types';
+import { Channel, Video } from '../types';
 
 export type YoutubeApi = {
   search: (
@@ -9,7 +9,7 @@ export type YoutubeApi = {
   searchByKeyword: (keyword: string | undefined) => Promise<Video[]>;
   searchByCategoryId: (categoryId: string | null) => Promise<Video[]>;
   mostPopular: () => Promise<Video[]>;
-  channelDetail: (id: string) => Promise<Video>;
+  channelDetail: (id: string) => Promise<Channel>;
   relatedVideos: (keyword: string) => Promise<Video[]>;
 };
 
