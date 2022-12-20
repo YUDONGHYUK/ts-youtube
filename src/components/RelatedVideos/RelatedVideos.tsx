@@ -22,7 +22,7 @@ export default function RelatedVideos({ id }: RelatedVideosProps) {
       {isLoading && (
         <div
           className='flex justify-center items-center w-full'
-          data-testId='loading-sppiner'
+          data-testid='loading-sppiner'
         >
           <Oval
             height={50}
