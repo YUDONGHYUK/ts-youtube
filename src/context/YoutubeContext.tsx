@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react';
-import { YoutubeApi } from '../api/youtube';
+import { Youtube } from '../api/youtube';
 
-export const YoutubeContext = createContext({} as YoutubeApi);
+export const YoutubeContext = createContext({} as Youtube);
 
 export function useYoutubeApi() {
   return useContext(YoutubeContext);

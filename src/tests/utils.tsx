@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { YoutubeContext } from '../context/YoutubeContext';
-import { YoutubeApi } from '../api/youtube';
+import { Youtube } from '../api/youtube';
 
 export function createWithMemoryRouter(
   routes: ReactNode,
@@ -19,7 +19,7 @@ export function createWithMemoryRouter(
   return <RouterProvider router={router} />;
 }
 
-export function createWithContext(children: ReactNode, youtube: YoutubeApi) {
+export function createWithContext(children: ReactNode, youtube: Youtube) {
   const testQueryClient = new QueryClient({
     defaultOptions: { queries: { retry: false } },
     logger: {

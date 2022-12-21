@@ -1,12 +1,13 @@
 import { ReactNode } from 'react';
-import { Youtube } from '../api/youtube';
 import { YoutubeContext } from './YoutubeContext';
+import YoutubeAPI from '../api/youtube';
+// import FakeYoutubeAPI from '../api/fakeYoutube';
 
 type YoutubeContextProviderProps = {
   children: ReactNode;
 };
 
-const youtube = Youtube;
+const youtube = new YoutubeAPI();
 
 export function YoutubeContextProvider({
   children,
