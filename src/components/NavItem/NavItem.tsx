@@ -12,8 +12,8 @@ export default function NavItem({ item, onUpdate }: NavItemProps) {
   return (
     <li
       className={`flex flex-col justify-center items-center rounded-xl py-2 lg:h-12 lg:mb-1 lg:px-3 lg:flex-row ${
-        isActive ? 'bg-zinc-800' : ''
-      } hover:bg-zinc-800`}
+        isActive ? 'bg-zinc-200 dark:bg-zinc-800' : ''
+      } hover:bg-zinc-200 hover:dark:bg-zinc-800`}
       onClick={() => onUpdate(item.id)}
     >
       <Icon name={name} />

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  /* @apply w-full max-w-screen-2xl; */
+  @apply w-full;
+}
+
+html.dark {
+  @apply bg-zinc-900 text-gray-100;
+}
+
+html {
+  @apply bg-zinc-100 text-gray-800;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,12 +25,6 @@ body {
 
   @apply flex flex-col items-center;
   @apply w-full h-screen px-8;
-  @apply bg-zinc-900 text-gray-100;
-}
-
-#root {
-  /* @apply w-full max-w-screen-2xl; */
-  @apply w-full;
 }
 
 code {
